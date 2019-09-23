@@ -14,3 +14,21 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/bienvenida', function() {
+    return view('landing-page');
+});
+Route::get('/contacto', function() {
+    return view('contacto');
+});
+
+
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
